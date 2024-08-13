@@ -1,21 +1,22 @@
-[gd_scene load_steps=17 format=3 uid="uid://dyce763tpvejl"]
+[gd_scene load_steps=18 format=3 uid="uid://dyce763tpvejl"]
 
 [ext_resource type="Script" path="res://Test project/Player.gd" id="1_ea58r"]
-[ext_resource type="Texture2D" uid="uid://bny38bm0v7rjo" path="res://Player_side_red_cloak_float.png" id="2_akxi7"]
 [ext_resource type="Script" path="res://Test project/playerCamera.gd" id="2_bxq0w"]
-[ext_resource type="Texture2D" uid="uid://dfdcapy4coyk3" path="res://Player_side_red_cloak.png" id="2_vduk2"]
 [ext_resource type="Texture2D" uid="uid://cykw5s0r0pgaw" path="res://Test project/Player_side_red_ cloak_running/Player_side_red_cloak_running2.png" id="3_3ssei"]
-[ext_resource type="Texture2D" uid="uid://ssuk010gcan0" path="res://Test project/Player_side_red_ cloak_running/Player_side_red_cloak_running3.png" id="4_xlx4i"]
-[ext_resource type="Texture2D" uid="uid://dxb0cuvl3fs8m" path="res://Test project/Player_side_red_ cloak_running/Player_side_red_cloak_running4.png" id="5_8nni8"]
-[ext_resource type="Texture2D" uid="uid://tcu1vrtqdecn" path="res://Test project/Player_side_red_ cloak_running/Player_side_red_cloak_running5.png" id="6_boxur"]
+[ext_resource type="Texture2D" uid="uid://ero1m4o5e28n" path="res://Sprite saves/Player Animations/Player_side_red_cloak_float.ase/Player_side_red_cloak_float.png" id="5_oewx3"]
+[ext_resource type="Texture2D" uid="uid://b6rs40h2jh03l" path="res://Sprite saves/Player Animations/Player_side_red_cloak.ase/Player_side_red_cloak.png" id="6_j6tpe"]
+[ext_resource type="Texture2D" uid="uid://b7k1w6bnaussk" path="res://Sprite saves/Player Animations/Player_side_red_cloak_running1.png/Player_side_red_cloak_running1.png" id="7_tg3bs"]
+[ext_resource type="Texture2D" uid="uid://ivy62lfwmktg" path="res://Sprite saves/Player Animations/Player_side_red_cloak_running1.png/Player_side_red_cloak_running2.png" id="8_oah4w"]
+[ext_resource type="Texture2D" uid="uid://4yum4xpr7bpn" path="res://Sprite saves/Player Animations/Player_side_red_cloak_running1.png/Player_side_red_cloak_running3.png" id="9_oxyed"]
 [ext_resource type="Script" path="res://Test project/DamagablePlayer.gd" id="9_vbuxk"]
 [ext_resource type="Script" path="res://Test project/playerPhysics.gd" id="10_gy32d"]
+[ext_resource type="Texture2D" uid="uid://8oatwplnc43x" path="res://Sprite saves/Player Animations/Player_side_red_cloak_running1.png/Player_side_red_cloak_running4.png" id="10_ulrxu"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p7pfk"]
 radius = 6.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g5qtt"]
-radius = 14.0357
+xingradius = 14.0357
 
 [sub_resource type="Animation" id="Animation_v8dle"]
 resource_name = "float"
@@ -23,14 +24,14 @@ length = 0.10001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("PlayerSprite:texture")
+tracks/0/path = NodePath("playerBody:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("2_akxi7")]
+"values": [ExtResource("5_oewx3")]
 }
 
 [sub_resource type="Animation" id="Animation_hhhd0"]
@@ -39,14 +40,14 @@ length = 0.10001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("PlayerSprite:texture")
+tracks/0/path = NodePath("playerBody:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("2_vduk2")]
+"values": [ExtResource("6_j6tpe")]
 }
 
 [sub_resource type="Animation" id="Animation_hh361"]
@@ -56,14 +57,14 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("PlayerSprite:texture")
+tracks/0/path = NodePath("playerBody:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.4, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("3_3ssei"), ExtResource("4_xlx4i"), ExtResource("5_8nni8"), ExtResource("6_boxur")]
+"values": [ExtResource("7_tg3bs"), ExtResource("8_oah4w"), ExtResource("9_oxyed"), ExtResource("10_ulrxu")]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_f4a6m"]
@@ -77,8 +78,10 @@ _data = {
 collision_layer = 2
 script = ExtResource("1_ea58r")
 
-[node name="PlayerSprite" type="Sprite2D" parent="."]
-texture = ExtResource("2_akxi7")
+[node name="playerBody" type="Sprite2D" parent="."]
+texture = ExtResource("3_3ssei")
+
+[node name="playerArm" type="Sprite2D" parent="playerBody"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 script = ExtResource("2_bxq0w")
