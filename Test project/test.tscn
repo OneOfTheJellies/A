@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://fn8fe3p8nay6"]
+[gd_scene load_steps=9 format=3 uid="uid://fn8fe3p8nay6"]
 
 [ext_resource type="PackedScene" uid="uid://bdbfeqm0w0j6d" path="res://Test project/biter_beetle.tscn" id="1_wjqh1"]
 [ext_resource type="PackedScene" uid="uid://dyce763tpvejl" path="res://Test project/character_body_2d.tscn" id="2_dbqiv"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dfqxrjhd6xmsl" path="res://sword_dropped.tscn" id="5_wl3f0"]
 [ext_resource type="PackedScene" uid="uid://dt1x7c2m386ts" path="res://OP_sword_dropped.tscn" id="6_okenp"]
 [ext_resource type="PackedScene" uid="uid://dka2kt1a4a6s6" path="res://target_dummy.tscn" id="7_t7648"]
+[ext_resource type="Texture2D" uid="uid://bt2qrphod0gke" path="res://fire.png" id="8_y5bxj"]
 
 [node name="test" type="Node2D"]
 
@@ -35,3 +36,2570 @@ position = Vector2(614, 78)
 
 [node name="targetDummy" parent="." instance=ExtResource("7_t7648")]
 position = Vector2(594, 172)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 369.0
+offset_top = 15.0
+offset_right = 827.0
+offset_bottom = 55.0
+text = "Goodbye Game!"
+
+[node name="Fire" type="Sprite2D" parent="."]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire5" type="Sprite2D" parent="Fire"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire5"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire5"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire5/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire5"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire5/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire5/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire5/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire5"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire5/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire5/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire5/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire5/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire5/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire5/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire5/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire6" type="Sprite2D" parent="Fire"]
+position = Vector2(-1947.23, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire6"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire6"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire6/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire6"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire6/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire6/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire6/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire6"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire6/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire6/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire6/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire6/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire6/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire6/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire6/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire5" type="Sprite2D" parent="Fire/Fire6"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire6/Fire5"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire6/Fire5"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire6/Fire5/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire6/Fire5"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire6/Fire5/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire6/Fire5/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire6/Fire5/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire6/Fire5"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire6/Fire5/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire6/Fire5/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire6/Fire5/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire6/Fire5/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire6/Fire5/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire6/Fire5/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire6/Fire5/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire7" type="Sprite2D" parent="Fire"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire7"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire7"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire7/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire7"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire7/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire7/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire7/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire5" type="Sprite2D" parent="Fire/Fire7"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire5"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire7/Fire5"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire5/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire7/Fire5"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire5/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire7/Fire5/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire5/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire7/Fire5"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire5/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire7/Fire5/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire5/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire7/Fire5/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire5/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire7/Fire5/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire5/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire6" type="Sprite2D" parent="Fire/Fire7"]
+position = Vector2(-1947.23, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire6"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire7/Fire6"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire7/Fire6"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire7/Fire6"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire5" type="Sprite2D" parent="Fire/Fire7/Fire6"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire5"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire5"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire5/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire5"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire5/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire5/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire5/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire5"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire5/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire5/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire5/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire5/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire5/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire5/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire7/Fire6/Fire5/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire8" type="Sprite2D" parent="Fire"]
+position = Vector2(1249.36, 54.3132)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire8"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire8"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire8/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire5" type="Sprite2D" parent="Fire/Fire8"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire5"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire5"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire5/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire8/Fire5"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire5/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire5/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire5/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire8/Fire5"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire5/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire5/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire5/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire8/Fire5/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire5/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire5/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire5/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire6" type="Sprite2D" parent="Fire/Fire8"]
+position = Vector2(-1947.23, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire6"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire6"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire8/Fire6"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire8/Fire6"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire5" type="Sprite2D" parent="Fire/Fire8/Fire6"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire5"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire5"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire5/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire5"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire5/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire5/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire5/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire5"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire5/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire5/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire5/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire5/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire5/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire5/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire6/Fire5/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire7" type="Sprite2D" parent="Fire/Fire8"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire7"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire8/Fire7"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire8/Fire7"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire5" type="Sprite2D" parent="Fire/Fire8/Fire7"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire5"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire5"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire5/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire5"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire5/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire5/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire5/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire5"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire5/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire5/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire5/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire5/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire5/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire5/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire5/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire6" type="Sprite2D" parent="Fire/Fire8/Fire7"]
+position = Vector2(4964.31, 68.1274)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire5" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire5"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire5"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire5/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire5"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire5/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire5/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire5/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire5"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire5/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire5/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire5/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire5/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire5/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire5/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire8/Fire7/Fire6/Fire5/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire9" type="Sprite2D" parent="Fire"]
+position = Vector2(-469.787, -819.422)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire9"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire5" type="Sprite2D" parent="Fire/Fire9"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire5"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire5"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire5/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire5"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire5/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire5/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire5/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire9/Fire5"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire5/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire5/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire5/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire5/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire5/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire5/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire5/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire6" type="Sprite2D" parent="Fire/Fire9"]
+position = Vector2(-1947.23, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire6"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire6"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire6"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire9/Fire6"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire5" type="Sprite2D" parent="Fire/Fire9/Fire6"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire5"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire5"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire5/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire5"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire5/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire5/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire5/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire5"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire5/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire5/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire5/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire5/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire5/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire5/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire6/Fire5/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire7" type="Sprite2D" parent="Fire/Fire9"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire7"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire7"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire9/Fire7"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire5" type="Sprite2D" parent="Fire/Fire9/Fire7"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire5"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire5"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire5/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire5"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire5/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire5/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire5/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire5"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire5/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire5/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire5/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire5/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire5/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire5/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire5/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire6" type="Sprite2D" parent="Fire/Fire9/Fire7"]
+position = Vector2(-1947.23, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire5" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire5"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire5"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire5/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire5"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire5/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire5/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire5/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire5"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire5/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire5/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire5/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire5/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire5/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire5/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire7/Fire6/Fire5/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire8" type="Sprite2D" parent="Fire/Fire9"]
+position = Vector2(1249.36, 54.3132)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire8"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire9/Fire8"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire5" type="Sprite2D" parent="Fire/Fire9/Fire8"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire5"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire5"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire5/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire5"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire5/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire5/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire5/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire5"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire5/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire5/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire5/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire5/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire5/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire5/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire5/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire6" type="Sprite2D" parent="Fire/Fire9/Fire8"]
+position = Vector2(-1947.23, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire5" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire5"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire5"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire5/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire5"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire5/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire5/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire5/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire5"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire5/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire5/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire5/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire5/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire5/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire5/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire6/Fire5/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire7" type="Sprite2D" parent="Fire/Fire9/Fire8"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire5" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire5"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire5"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire5/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire5"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire5/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire5/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire5/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire5"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire5/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire5/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire5/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire5/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire5/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire5/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire5/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire6" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7"]
+position = Vector2(4964.31, 68.1274)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire5" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire5"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire5"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire5/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire5"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire5/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire5/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire5/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire4" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire5"]
+position = Vector2(-1586.38, 122.795)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire5/Fire4"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire5/Fire4"]
+position = Vector2(-1225.53, 576.193)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire5/Fire4/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire3" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire5/Fire4"]
+position = Vector2(703, 81)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire5/Fire4/Fire3"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire2" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire5/Fire4/Fire3"]
+position = Vector2(963.404, 42.506)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
+
+[node name="Fire" type="Sprite2D" parent="Fire/Fire9/Fire8/Fire7/Fire6/Fire5/Fire4/Fire3/Fire2"]
+position = Vector2(-1365.11, 140.801)
+scale = Vector2(0.29375, 0.423469)
+texture = ExtResource("8_y5bxj")
